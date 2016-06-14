@@ -3,12 +3,17 @@ var cardTwo ="queen";
 var cardThree ="king";
 var cardFour ="king";
 
-if (cardOne === cardTwo) {
-	alert('You found a match!');
-}
-if (cardThree === cardFour){
-	alert('you found a match!');
-}
-else {
-	alert('Sorry, try again.');
+//if (cardOne === cardTwo) {
+//	alert('You found a match!');
+//}
+//if (cardThree === cardFour){
+//	alert('you found a match!');
+//}
+//else {
+//	alert('Sorry, try again.');
+//}
+var board = document.getElementById('game-board');
+for (var i=0; i<cards.length; i++) {
+  var cardElement = document.createElement('div');
+  cardElement.className = 'card';board.appendChild(cardElement);
 }
